@@ -12,7 +12,7 @@ const LandingPage = ()=>{
     }
     useEffect(()=>{
         async function retrieveData(){
-            let result = await jadwalBola(id);
+            let result = await jadwalBola((id)? id : 'liga-inggris');
             setJadwal(result)
         }
         retrieveData()
